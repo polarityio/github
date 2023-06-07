@@ -35,8 +35,8 @@ module.exports = {
       regex: /CVE-(1999|2\d{3})-(0\d{2}[1-9]|[1-9]\d{3,})/
     },
     {
-      key: 'all text',
-      regex: /^[\s\S]{2,2048}/
+      key: 'allText',
+      regex: /^[\s\S]{2,2048}$/
     },
     {
       key: '@handle',
