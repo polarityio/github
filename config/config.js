@@ -24,19 +24,15 @@ module.exports = {
    */
   description:
     "Searches on GitHub for Public Content",
-  entityTypes: ['hash','ip','domain'],
+  entityTypes: ['hash','IP','domain', 'cve'],
   customTypes:[
     {
       key: 'kb',
       regex: /KB\s?[0-9]{7}/
     },
     {
-      key: 'cve',
-      regex: /CVE-(1999|2\d{3})-(0\d{2}[1-9]|[1-9]\d{3,})/
-    },
-    {
-      key: 'all text',
-      regex: /^[\s\S]{2,2048}/
+      key: 'allText',
+      regex: /\S[\s\S]{2,2048}\S/
     },
     {
       key: '@handle',
