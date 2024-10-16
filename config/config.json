@@ -3,12 +3,7 @@
   "name": "GitHub",
   "acronym": "GH",
   "description": "Searches on GitHub for Public Content",
-  "entityTypes": [
-    "hash",
-    "domain",
-    "IP",
-    "cve"
-  ],
+  "entityTypes": ["MD5", "SHA1", "SHA256", "domain", "IPv4", "IPv6", "cve"],
   "customTypes": [
     {
       "key": "kb",
@@ -24,9 +19,7 @@
     }
   ],
   "defaultColor": "light-gray",
-  "styles": [
-    "./styles/style.less"
-  ],
+  "styles": ["./styles/style.less"],
   "block": {
     "component": {
       "file": "./components/block.js"
@@ -34,13 +27,6 @@
     "template": {
       "file": "./templates/block.hbs"
     }
-  },
-  "request": {
-    "cert": "",
-    "key": "",
-    "passphrase": "",
-    "ca": "",
-    "proxy": ""
   },
   "logging": {
     "level": "info"
